@@ -1,29 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./animations.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./animations.css">
 </head>
 <body id="body" class="anima body-dark">
-    <nav>
-        <button onclick="darkTheme()">Tema Dark</button>
-        <button onclick="lightTheme()">Tema Light</button> 
-    </nav>
-    <h2>Enviando um post</h2>
+  <nav>
+    <div>
 
-    <form id="my-form">
-        <label for="title">Titulo</label> <br>
-        <input type="text" name="title" id="title"/> <br>
-        <label for="image">Imagem: </label>
-        <input type="file" name="image" id="image">
-        <button type="submit">Enviar</button>
-    </form>
-    <div id="latest-post"></div>
-    <script src="./post.js"></script>
-    <script src="./styles.js"></script>
+    </div>
+    <div class="Preto-branco" id="Preto-branco">
+        <button onclick="darkTheme()">Black</button>
+        <button onclick="lightTheme()">White</button> 
+    </div>
+
+  </nav>
+  <div class = "conteudo"id="conteudo">
+    <div class="formDiv" id="formDiv">
+        <div class="Texto-1" id="Texto-1">
+            <h1>Enviando um post</h1>
+        </div>
+      <form class="my-form" id="my-form">
+        <div class="Texto-2" id="Texto-2">
+            <label id="title" for="title">Titulo:</label>
+        </div>
+        <input type="text" name="title" id="title"/>
+        <div class="Texto-3" id="Texto-3">
+            <label for="image" id="imageLabel"  class="imageLabel"> Envie aqui sua imagem</label>
+        </div>
+        <input type="file" name="image" id="image"/>
+        <button class="form-button" type="submit"> Enviar</button>
+      </form>
+    </div>
+    <div id="imagem">
+      <div id="latest-post"></div>
+    </div>
+  </div>
+  <div id="Cards"></div>
+  <script src="./post.js"></script>
+  <script src="./styles.js"></script>
 </body>
 </html>

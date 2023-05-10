@@ -1,14 +1,41 @@
 .anima{
-    animation: mudarParaPreto 2s ease-in-out;
+    animation: mudarParaPreto 1s ease-in-out;
 }
 @keyframes mudarParaPreto {
-    0%{
-        background-color: aliceblue;
+    100%{
+        background-color: rgb(0, 0, 0);
+    }
+    90%{
+        background-color: rgb(20, 20, 20);
+    }
+    80%
+    {
+        background-color: rgb(40, 40, 40);
+    }
+    70%
+    {
+        background-color: rgb(60, 60, 60);
+    }
+    60%{
+        background-color: rgb(80, 80, 80);
     }
     50%{
-        background-color: gray;
+        background-color: rgb(100, 100, 100);
     }
-    100%{
-        background-color: black;
+    40%{
+        background-color: rgb(120, 120, 120);
     }
+    30%{
+        background-color: rgb(140, 140, 140);
+    }
+    20%{
+        background-color: rgb(160, 160, 160);
+    }
+    10%{
+        background-color: rgb(180, 180, 180);
+    }
+    0%{
+        background-color: rgb(200, 200, 200);
+    }
+    
 }

@@ -1,10 +1,158 @@
-:root{
-    --background-dark: black;
-    --background-light: white; 
-}
-.body-dark{
-    background-color: var(--background-dark);
-}
-.body-light{
-    background-color: var(--background-light);
-}
+
+  body{
+    overflow: hidden;
+  }
+  .body-dark{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255)
+  }
+  .body-light{
+    background-color:rgb(65, 65, 65);
+    color: black
+  }
+  .body-light .conteudo .formDiv{
+    background-color: rgb(0, 0, 0);
+    color: white
+  }
+  .body-light .conteudo #imagem{
+    background-color: rgb(0, 0, 0);
+    color: rgb(211, 210, 210);
+  }
+  nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .my-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .my-form input{
+    width: 280px;
+    height: 30px;
+    border-radius: 8px;
+    color: rgb(20, 37, 95);
+    padding-left: 10px;
+  }
+  .my-form #title{
+    margin: 20px;
+    font-size: 1.4rem;
+  }
+  .my-form button{
+    margin-top: 20px;
+    font-size: 1.4rem;
+  }
+  .formDiv{
+    text-align: center;
+    background-color: rgb(138, 138, 138);
+    width: 35%;
+    border-radius: 12px;
+    height: 500px;
+    
+  }
+  input[type="file"] {
+    display: none;
+  }
+  #imagem{
+    background-color:rgb(138, 138, 138);
+    width: 35%;
+    border-radius: 12px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .conteudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .imageLabel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 200px;
+    border: 2px solid rgb(206, 204, 204);
+    border-radius: 4px;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat; 
+  }
+  .form-button{
+    color: rgb(209, 206, 206);
+    background-color: rgb(65, 65, 65);
+    border-radius: 8px;
+  }
+  .LatestImagem{
+    width: 250px;
+    height: 250px;
+    animation: latestImagemAnimation 1s ease-in-out;
+  }
+  #card{
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    width: 300px;
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    border-radius: 12px;
+    animation: openCard 1.5s ease-out;
+  }
+  
+  .Card-de-envio{
+    background-color:  green;
+  }
+  .Card-de-erro{
+    background-color:  red;
+  }
+  @media (max-width: 480px) {
+    .text {
+      font-size: 16px;
+    }
+    .conteudo{
+      flex-direction: column;
+    }
+    .formDiv{
+      width: 100%;
+    }
+    #imagem{
+      margin-top: 10px;
+      width: 100%;
+    }
+    body{
+      overflow: scroll;
+    }
+    #card{
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      width: 300px;
+      height: 140px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      border-radius: 12px;
+      animation: openCardCel 1.5s ease-out;
+    }
+  }
+  .temasOptions
+  {
+    width: 200px;
+    height: 200px;
+  }
+  .Texto-1
+  {
+    font-style: italic;
+  }
+  .Preto-branco
+  {
+  }
